@@ -5,17 +5,21 @@ set clipboard=unnamed
 set directory=$HOME/vimbackup
 set expandtab
 set list
-set shiftwidth=2
 set showmatch
 set ignorecase
 set smartcase
 set smartindent
 set smarttab
-set tabstop=2
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=eol,start,indent
 set laststatus=2
 set statusline=%F%M%R%=code:%B%H%W
+
+" tab
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 " http://www.kawaz.jp/pukiwiki/?vim
 " 文字コードの自動認識
