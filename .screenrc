@@ -9,3 +9,5 @@ bind s eval "encoding SJIS"  "stuff 'export LANG=ja_JP.SJIS\012'"
 bind j eval "encoding jis"   "stuff 'export LANG=ja_JP.jis\012'"
 setenv LANG ja_JP.UTF-8
 
+# default shell to invoke with ^T-c
+shell /bin/bash
