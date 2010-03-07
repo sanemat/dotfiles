@@ -11,3 +11,7 @@ setenv LANG ja_JP.UTF-8
 
 # default shell to invoke with ^T-c
 shell /bin/bash
+
+# default screens
+# chdir
+screen -t bash - bash -l
