@@ -16,4 +16,4 @@ shell $SHELL
 
 # default screens
 # chdir
-screen -t bash - bash -l
+##screen -t bash -
