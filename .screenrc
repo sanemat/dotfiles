@@ -12,7 +12,7 @@ setenv LANG ja_JP.UTF-8
 hardstatus alwayslastline "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} %{=b wb}%Y-%m-%d %{=b wm}%c"
 
 # default shell to invoke with ^T-c
-shell /bin/bash
+shell $SHELL
 
 # default screens
 # chdir
