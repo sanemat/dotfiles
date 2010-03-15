@@ -1,14 +1,16 @@
 #Keys
 escape ^Tt
+vbell off
 zombie ^[
 bind w windowlist -b
 bind ^] paste [.]
+bind ^k kill
 bind u eval "encoding UTF-8" "stuff 'export LANG=ja_JP.UTF-8\012'"
 bind e eval "encoding eucJP" "stuff 'export LANG=ja_JP.eucJP\012'"
 bind s eval "encoding SJIS"  "stuff 'export LANG=ja_JP.SJIS\012'"
 bind j eval "encoding jis"   "stuff 'export LANG=ja_JP.jis\012'"
 setenv LANG ja_JP.UTF-8
-
+defscrollback 8888
 hardstatus alwayslastline "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} %{=b wb}%Y-%m-%d %{=b wm}%c"
 
 # default shell to invoke with ^T-c
