@@ -6,7 +6,9 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
-#if [ -z "$STY" ]; then
-#  exec screen -dR
-#fi
-PS1='\033k\033\\[\u@\h \W]\$ '
+
+# Setting the title to the name of the running program
+# Only execute in GNU Screen
+if [ -n "$STY" ]; then
+export PS1='\033k\033\\[\u@\h \W]\$ '
+fi
