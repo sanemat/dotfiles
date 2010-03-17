@@ -11,6 +11,7 @@ bind s eval "encoding SJIS"  "stuff 'export LANG=ja_JP.SJIS\012'"
 bind j eval "encoding jis"   "stuff 'export LANG=ja_JP.jis\012'"
 setenv LANG ja_JP.UTF-8
 defscrollback 8888
+caption always "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk}"
 hardstatus alwayslastline "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} %{=b wb}%Y-%m-%d %{=b wm}%c"
 
 # default shell to invoke with ^T-c
