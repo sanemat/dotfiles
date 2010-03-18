@@ -20,6 +20,3 @@ hardstatus alwayslastline "%{= wb} %-w%{= wb}%n %t%{-}%+w %= %{=b wb}%Y-%m-%d %{
 shell bash
 
 shelltitle "$ |bash"
-# default screens
-# chdir
-##screen -t bash -
