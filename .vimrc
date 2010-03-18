@@ -1,8 +1,12 @@
+" if filereadable(expand('~/dotfiles/.vimrc'))
+"   source ~/dotfiles/.vimrc
+" endif
+" set backupdir=$HOME/vimbackup
+" set directory=$HOME/vimbackup
+" ==
 set autoindent
-set backupdir=$HOME/vimbackup
 set browsedir=buffer
 set clipboard=unnamed
-set directory=$HOME/vimbackup
 set expandtab
 set list
 set showmatch
