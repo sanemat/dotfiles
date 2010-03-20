@@ -1,8 +1,6 @@
 " if filereadable(expand('~/dotfiles/.vimrc'))
 "   source ~/dotfiles/.vimrc
 " endif
-" set backupdir=$HOME/vimbackup
-" set directory=$HOME/vimbackup
 " ==
 set autoindent
 set browsedir=buffer
@@ -18,6 +16,8 @@ set whichwrap=b,s,h,l,<,>,[,]
 set backspace=eol,start,indent
 set laststatus=2
 set statusline=%F%M%R%=code:%B%H%W
+set backupdir=$HOME/vimbackup
+set directory=$HOME/vimbackup
 
 " tab
 set expandtab
