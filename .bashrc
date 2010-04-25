@@ -2,6 +2,9 @@
 # if [ -f /etc/bashrc ]; then
 #     . /etc/bashrc
 # fi
+#if [ -f /usr/share/doc/git-1.6.6.1/contrib/completion/git-completion.bash ]; then
+#      source /usr/share/doc/git-1.6.6.1/contrib/completion/git-completion.bash
+#fi
 # if [ -f $HOME/dotfiles/.bashrc ]; then
 #     source $HOME/dotfiles/.bashrc
 # fi
