@@ -3,4 +3,5 @@
 
 require 'irb/completion'
 require 'rubygems'
+require 'pp'
 require 'active_support'
