@@ -19,6 +19,11 @@ set statusline=%F%M%R%=code:%B%H%W
 set backupdir=$HOME/vimbackup
 set directory=$HOME/vimbackup
 
+" php-doc
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR>
+
 " tab
 set expandtab
 set tabstop=2
