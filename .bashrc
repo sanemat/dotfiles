@@ -25,3 +25,5 @@ export HISTSIZE=300000
 if [ -n "$STY" ]; then
   export PS1='\033k\033\\[\u@\h \W]\$ '
 fi
+
+alias rurima='rurema'
