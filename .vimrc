@@ -19,6 +19,10 @@ set statusline=%F%M%R%=code:%B%H%W
 set backupdir=$HOME/vimbackup
 set directory=$HOME/vimbackup
 
+" filetype
+filetype plugin indent on
+syntax enable
+
 " php-doc
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
