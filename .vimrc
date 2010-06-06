@@ -34,6 +34,10 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" keymap
+nnoremap <C-h> :<C-u>help<Space>
+nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
+
 " http://www.kawaz.jp/pukiwiki/?vim
 " 文字コードの自動認識
 if &encoding !=# 'utf-8'
