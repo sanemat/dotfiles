@@ -38,6 +38,16 @@ set shiftwidth=2
 nnoremap <C-h> :<C-u>help<Space>
 nnoremap <C-h><C-h> :<C-u>help<Space><C-r><C-w><Enter>
 
+" time hojo
+inoremap <expr> ,df strftime('%Y-%m-%dT%H:%M:%S')
+inoremap <expr> ,dd strftime('%Y-%m-%d')
+inoremap <expr> ,dt strftime('%H:%M:%S')
+
+" gc
+nnoremap gc `[v`]
+vnoremap gc :<C-u>normal gc<Enter>
+onoremap gc :<C-u>normal gc<Enter>
+
 " http://www.kawaz.jp/pukiwiki/?vim
 " 文字コードの自動認識
 if &encoding !=# 'utf-8'
