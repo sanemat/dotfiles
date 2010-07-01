@@ -1,0 +1,8 @@
+[user]
+	name = sanemat
+	email = o.gata.ken@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+	pager = LESSCHARSET=utf-8 less
