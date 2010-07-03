@@ -33,7 +33,7 @@ map <silent> sy :call YanktmpYank()<cr>
 map <silent> sp :call YanktmpPaste_p()<cr>
 map <silent> sP :call YanktmpPaste_P()<cr> 
 
-let g:yanktmp_file = "/home/sane/vimbackup/yanktmp"
+" let g:yanktmp_file = $HOME/vimbackup/yanktmp
 " tab
 set expandtab
 set tabstop=2
