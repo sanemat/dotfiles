@@ -1,5 +1,8 @@
-" if filereadable(expand('~/dotfiles/.vimrc'))
-"   source ~/dotfiles/.vimrc
+" let g:shared_dir = expand('~/dotfiles')
+" let g:vimrc_path = shared_dir . '/.vimrc'
+" let g:vim_work_dir = expand('~/vimbackup')
+" if filereadable(g:vimrc_path)
+"   execute 'source' g:vimrc_path
 " endif
 " ==
 set autoindent
