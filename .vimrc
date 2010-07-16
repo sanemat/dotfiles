@@ -83,6 +83,9 @@ nmap bq :FufQuickfix<CR>
 nmap bl :FufLine<CR>
 nnoremap <silent> <C-]> :FufTag! <C-r>=expand('<cword>')<CR><CR>
 
+" eregex.vim
+map / <ESC>:M/
+
 " http://www.kawaz.jp/pukiwiki/?vim
 " 文字コードの自動認識
 if &encoding !=# 'utf-8'
