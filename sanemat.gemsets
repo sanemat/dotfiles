@@ -1,4 +1,4 @@
-# sanemat.gemsets generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
+# /home/sane/dotfiles/sanemat.gemsets generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
 abstract -v1.0.0
 actionmailer -v3.0.3
 actionpack -v3.0.3
@@ -39,6 +39,7 @@ ffi -v0.6.3
 gemcutter -v0.6.1
 gherkin -v2.3.3
 git -v1.2.5
+haml -v3.0.25
 heroku -v1.17.6
 highline -v1.6.1
 hirb -v0.3.6
