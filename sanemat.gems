@@ -1,4 +1,4 @@
-# /home/sane/dotfiles/sanemat.gemsets generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
+# /home/sane/dotfiles/sanemat.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
 abstract -v1.0.0
 actionmailer -v3.0.3
 actionpack -v3.0.3
@@ -58,6 +58,7 @@ monk-glue -v0.0.1
 mysql2 -v0.2.6
 nokogiri -v1.4.4
 oauth -v0.4.4
+paperclip -v2.3.8
 pdf-writer -v1.1.8
 pit -v0.0.6
 polyglot -v0.3.1
