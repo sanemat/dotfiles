@@ -27,3 +27,4 @@ if [ -n "$STY" ]; then
 fi
 
 alias rurima='rurema'
+alias g='git'
