@@ -28,3 +28,6 @@ fi
 
 alias rurima='rurema'
 alias g='git'
+function t() {
+  termtter -c -r "$*"
+}
