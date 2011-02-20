@@ -7,14 +7,17 @@ activerecord -v3.0.3
 activeresource -v3.0.3
 activesupport -v3.0.3
 activesupport -v2.3.10
+addressable -v2.2.4
 addressable -v2.2.2
 alias -v0.2.2
 arel -v2.0.7
 autotest_screen -v4.0.2
+boson -v0.3.3
 boson -v0.3.2
 bson -v1.2.0
 bson -v1.0.9
 builder -v2.1.2
+bundler -v1.0.10
 bundler -v1.0.7
 capistrano -v2.5.19
 capistrano-ext -v1.2.1
@@ -36,6 +39,8 @@ erubis -v2.6.6
 escape_utils -v0.1.9
 eventmachine -v0.12.10
 factory_girl -v1.3.3
+faraday -v0.5.5
+faraday_middleware -v0.3.2
 fastercsv -v1.5.4
 fastthread -v1.0.7
 ffi -v1.0.5
@@ -61,6 +66,7 @@ mime-types -v1.16
 mongo -v1.0.9
 mongoid -v1.9.2
 monk-glue -v0.0.1
+multipart-post -v1.1.0
 mysql2 -v0.2.6
 net-scp -v1.0.4
 net-sftp -v2.0.5
@@ -88,6 +94,7 @@ rspec-core -v2.4.0
 rspec-expectations -v2.4.0
 rspec-mocks -v2.4.0
 rspec-rails -v2.4.1
+rubygems-update -v1.5.2
 rubytter -v1.4.2
 rubyzip -v0.9.4
 ruport -v1.6.3
@@ -95,6 +102,7 @@ screenout -v0.0.0
 selenium-webdriver -v0.1.2
 shotgun -v0.8
 shoulda -v2.11.3
+simple_oauth -v0.1.4
 sinatra -v1.1.2
 sinatra -v0.9.4
 sqlite3 -v1.3.3
