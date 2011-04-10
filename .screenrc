@@ -4,6 +4,7 @@
 escape ^Tt
 vbell off
 zombie ^[
+startup_message off
 bind w windowlist -b
 bind ^] paste [.]
 bind ^k kill
