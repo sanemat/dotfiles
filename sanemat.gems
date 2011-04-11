@@ -125,6 +125,7 @@ rack-mount -v0.6.14
 rack-mount -v0.6.13
 rack-test -v0.5.7
 rails -v3.0.6
+rails -v2.3.11
 rails -v3.0.3
 railties -v3.0.6
 railties -v3.0.3
