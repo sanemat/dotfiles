@@ -31,3 +31,6 @@ alias g='git'
 function t() {
   termtter -c -r "$*"
 }
+
+# Mac OSX using sjis. It's crazy.
+export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
