@@ -34,3 +34,5 @@ function t() {
 
 # Mac OSX using sjis. It's crazy.
 export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
+
+alias be='bundle exec'
