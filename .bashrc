@@ -36,3 +36,4 @@ function t() {
 export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
 
 alias be='bundle exec'
+alias svngrep="grep --exclude='*.svn-*' --exclude='entries'"
