@@ -39,3 +39,6 @@ alias be='bundle exec'
 alias svngrep="grep --exclude='*.svn-*' --exclude='entries'"
 alias rvenv='rbenv'
 alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=>"."})->to_app' -p 3000"
+git() {
+  if [[ $@ == "stauts" ]]; then command git status; else command git "$@"; fi;
+}
