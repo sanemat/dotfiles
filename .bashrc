@@ -42,3 +42,14 @@ alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=
 git() {
   if [[ $@ == "stauts" ]]; then command git status; else command git "$@"; fi;
 }
+svn() {
+  if [[ $@ == "stauts" ]]
+  then
+    command svn status
+  elif [[ $@ == "grep" ]]
+  then
+    command svngrep
+  else
+    command svn "$@"
+  fi
+}
