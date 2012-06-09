@@ -40,11 +40,12 @@ alias svngrep="grep --exclude='*.svn-*' --exclude='entries'"
 alias rvenv='rbenv'
 alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=>\".\"})->to_app' -p 3000"
 git() {
-  if [[ $@ == stauts ]]
+  if [[ $1 == stauts ]]
   then
-    command git status
+    local remains=$(echo "$@" | sed -e 's!stauts!!')
+    command "git status $remains"
   else
-    command git "$@"
+    command "git $@"
   fi
 }
 svn() {
