@@ -36,26 +36,28 @@ function t() {
 export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
 
 alias be='bundle exec'
-alias svngrep="grep --exclude='*.svn-*' --exclude='entries'"
+alias svngrep="svn grep"
 alias rvenv='rbenv'
 alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=>\".\"})->to_app' -p 3000"
 git() {
   if [[ $1 == stauts ]]
   then
-    local remains=$(echo "$@" | sed -e 's!stauts!!')
-    command "git status $remains"
+    local remains=$(echo $* | sed -e 's!stauts!!')
+    command git status $remains
   else
-    command "git $@"
+    command git $*
   fi
 }
 svn() {
-  if [[ $@ == stauts ]]
+  if [[ $1 == stauts ]]
   then
-    command svn status
-  elif [[ $@ == grep ]]
+    local remains=$(echo $* | sed -e 's!stauts!!')
+    command svn status $remains
+  elif [[ $1 == grep ]]
   then
-    command svngrep
+    local remains=$(echo $* | sed -e 's!grep!!')
+    command grep --exclude='*.svn-*' --exclude='entries' $remains
   else
-    command svn "$@"
+    command svn $*
   fi
 }
