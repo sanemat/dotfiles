@@ -29,7 +29,7 @@ fi
 alias rurima='rurema'
 alias g='git'
 function t() {
-  termtter -c -r "$*"
+  termtter -c -r "$@"
 }
 
 # Mac OSX using sjis. It's crazy.
