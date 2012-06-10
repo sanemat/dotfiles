@@ -42,10 +42,10 @@ alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=
 git() {
   if [[ $1 == stauts ]]
   then
-    local remains=$(echo $* | sed -e 's!stauts!!')
-    command git status $remains
+    shift
+    command git status "$@"
   else
-    command git $*
+    command git "$@"
   fi
 }
 svn() {
