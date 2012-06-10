@@ -40,7 +40,7 @@ alias svngrep="svn grep"
 alias rvenv='rbenv'
 alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=>\".\"})->to_app' -p 3000"
 git() {
-  if [[ $1 == stauts ]]
+  if [[ $1 = stauts ]]
   then
     shift
     command git status "$@"
@@ -49,11 +49,11 @@ git() {
   fi
 }
 svn() {
-  if [[ $1 == stauts ]]
+  if [[ $1 = stauts ]]
   then
     shift
     command svn status "$@"
-  elif [[ $1 == grep ]]
+  elif [[ $1 = grep ]]
   then
     shift
     command grep --exclude='*.svn-*' --exclude='entries' "$@"
