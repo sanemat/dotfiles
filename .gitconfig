@@ -1,8 +1,21 @@
 [user]
-	name = sanemat
-	email = o.gata.ken@gmail.com
+  name = sanemat
+  email = o.gata.ken@gmail.com
 [color]
-	ui = auto
+  ui = auto
 [core]
-	editor = vim
-	pager = LESSCHARSET=utf-8 less
+  editor = vim
+  excludesfile = /Users/sane/dotfiles/.gitignore-system
+  pager = LESSCHARSET=utf-8 less
+[github]
+  user = sanemat
+  token = GITHUB_TOKEN
+[alias]
+  graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%cn] %Cgreen%d%Creset %s\" --all --date=short
+  ci = commit
+  st = status
+  co = checkout
+  oneline = log --pretty=oneline
+  br = branch
+  la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
+  a = add
