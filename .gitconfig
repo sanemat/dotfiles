@@ -1,3 +1,10 @@
+#[include]
+#  path = /Users/sane/dotfiles/.gitconfig
+#[core]
+#  excludesfile = /Users/sane/dotfiles/.gitignore-system
+#[github]
+#  user = sanemat
+#  token = GITHUB_TOKEN
 [user]
   name = sanemat
   email = o.gata.ken@gmail.com
