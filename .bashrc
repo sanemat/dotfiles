@@ -38,6 +38,9 @@ export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
 alias be='bundle exec'
 alias svngrep="svn grep"
 alias rvenv='rbenv'
+alias zues='zeus'
+alias zuse='zeus'
+alias zese='zeus'
 alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=>\".\"})->to_app' -p 4000"
 git() {
   if [[ $1 = stauts ]]
