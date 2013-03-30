@@ -143,3 +143,12 @@ set fileformats=unix,dos,mac
 if exists('&ambiwidth')
   set ambiwidth=double
 endif
+
+" http://d.hatena.ne.jp/mrkn/20110221/current_ruby_in_macvim_kaoriya
+if has('gui_macvim') && has('kaoriya')
+  let s:ruby_libdir = system("ruby -rrbconfig -e 'print Config::CONFIG[\"libdir\"]'")
+  let s:ruby_libruby = s:ruby_libdir . '/libruby.dylib'
+  if filereadable(s:ruby_libruby)
+    let $RUBY_DLL = s:ruby_libruby
+  endif
+endif
