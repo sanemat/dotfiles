@@ -13,6 +13,7 @@
 [core]
   editor = vim
   excludesfile = /Users/sane/dotfiles/.gitignore-system
+  attributesfile = /Users/sane/dotfiles/.gitattributes-system
   pager = LESSCHARSET=utf-8 less
 [github]
   user = sanemat
