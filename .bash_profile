@@ -43,6 +43,7 @@ alias zese='zeus'
 alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=>\".\"})->to_app' -p 4000"
 alias bep='be pry -r ./config/environment'
 alias dl='docker ps -l -q'
+alias gosh="rlwrap -b '(){}[],#\";| ' gosh"
 git() {
   if [[ $1 = stauts ]]
   then
