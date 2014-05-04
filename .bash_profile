@@ -35,6 +35,8 @@ export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
 alias ls="ls -G"
 alias ll="ls -hl"
 alias be='bundle exec'
+alias npm-exec='PATH=$(npm bin):$PATH'
+alias ne='npm-exec'
 alias svngrep="svn grep"
 alias rvenv='rbenv'
 alias zues='zeus'
