@@ -16,6 +16,7 @@ function share_history {
 PROMPT_COMMAND='share_history'
 shopt -u histappend
 export HISTSIZE=530000
+export HISTCONTROL=ignoreboth:erasedups
 
 # Setting the title to the name of the running program
 # Only execute in GNU Screen
