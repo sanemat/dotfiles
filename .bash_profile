@@ -15,7 +15,7 @@ function share_history {
 }
 PROMPT_COMMAND='share_history'
 shopt -u histappend
-export HISTSIZE=300000
+export HISTSIZE=530000
 
 # Setting the title to the name of the running program
 # Only execute in GNU Screen
