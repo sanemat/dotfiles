@@ -43,6 +43,7 @@ alias zues='zeus'
 alias zuse='zeus'
 alias zese='zeus'
 alias pup="plackup -MPlack::App::Directory -e 'Plack::App::Directory->new({root=>\".\"})->to_app' -p 4000"
+alias rup="rackup -b \"run Rack::Directory.new('.')\" -p 9494"
 alias bep='be pry -r ./config/environment'
 alias dl='docker ps -l -q'
 alias gosh="rlwrap -b '(){}[],#\";| ' gosh"
