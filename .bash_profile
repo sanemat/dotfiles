@@ -16,6 +16,7 @@ function share_history {
 PROMPT_COMMAND='share_history'
 shopt -u histappend
 export HISTSIZE=530000
+export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE="ls:ls *:ll:ll *:cd: cd -:pwd"
 
