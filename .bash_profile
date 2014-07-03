@@ -55,6 +55,10 @@ git() {
   then
     shift
     command git status "$@"
+  elif [[ $1 = commti ]]
+  then
+    shift
+    command git commit "$@"
   else
     command git "$@"
   fi
