@@ -18,7 +18,7 @@ shopt -u histappend
 export HISTSIZE=530000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth:erasedups
-export HISTIGNORE="ls:ls *:ll:ll *:cd: cd -:pwd"
+export HISTIGNORE="cd: cd -:pwd"
 
 export GOPATH=$HOME
 export GOROOT=$HOME/.homebrew/Cellar/go/1.3/libexec
