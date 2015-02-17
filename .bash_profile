@@ -111,4 +111,4 @@ peco-history() {
     history -d $((HISTCMD-1))
   fi
 }
-bind '"\C-x\C-r":"peco-history\n"'
+bind '"\C-r":"peco-history\n"'
