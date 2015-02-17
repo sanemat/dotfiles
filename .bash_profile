@@ -112,3 +112,28 @@ peco-history() {
   fi
 }
 bind '"\C-r":"peco-history\n"'
+
+# http://qiita.com/takayuki206/items/f4d0dbb45e5ee2ee698e
+function __show_status() {
+    local status=$(echo ${PIPESTATUS[@]})
+    local SETCOLOR_SUCCESS="echo -en \\033[1;32m"
+    local SETCOLOR_FAILURE="echo -en \\033[1;31m"
+    local SETCOLOR_WARNING="echo -en \\033[1;33m"
+    local SETCOLOR_NORMAL="echo -en \\033[0;39m"
+
+    local SETCOLOR s
+    for s in ${status}
+    do
+        if [ ${s} -gt 100 ]; then
+            SETCOLOR=${SETCOLOR_FAILURE}
+        elif [ ${s} -gt 0 ]; then
+            SETCOLOR=${SETCOLOR_WARNING}
+        else
+            SETCOLOR=${SETCOLOR_SUCCESS}
+        fi
+    done
+    ${SETCOLOR}
+    echo "(rc->${status// /|})"
+    ${SETCOLOR_NORMAL}
+}
+PROMPT_COMMAND='__show_status;'${PROMPT_COMMAND//__show_status;/}
