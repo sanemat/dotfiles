@@ -54,6 +54,7 @@ alias rup="rackup -b \"run Rack::Directory.new('.')\" -p 9494"
 alias bep='be pry -r ./config/environment'
 alias dl='docker ps -l -q'
 alias gosh="rlwrap -b '(){}[],#\";| ' gosh"
+alias hubo='hub browse'
 git() {
   if [[ $1 = stauts ]]
   then
