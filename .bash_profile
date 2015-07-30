@@ -5,6 +5,12 @@
 # if [ -f $HOME/dotfiles/.bash_profile ]; then
 #     source $HOME/dotfiles/.bash_profile
 # fi
+# export PATH="$HOME/.anyenv/bin:$PATH"
+# eval "$(anyenv init -)"
+# jenv global-options "-Dfile.encoding=UTF-8"
+# source ~/.anyenv/envs/rbenv/completions/rbenv.bash
+# source ~/.anyenv/envs/plenv/completions/plenv.bash
+#
 # ==
 # http://d.hatena.ne.jp/n9d/20090120/1232404797
 # thanx hirocaster
@@ -35,12 +41,6 @@ alias g='git'
 function t() {
   termtter -c -r "$@"
 }
-
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
-jenv global-options "-Dfile.encoding=UTF-8"
-source ~/.anyenv/envs/rbenv/completions/rbenv.bash
-source ~/.anyenv/envs/plenv/completions/plenv.bash
 
 alias ls="ls -G"
 alias ll="ls -hl"
