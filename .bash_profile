@@ -36,8 +36,11 @@ function t() {
   termtter -c -r "$@"
 }
 
-# Mac OSX using sjis. It's crazy.
-export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+jenv global-options "-Dfile.encoding=UTF-8"
+source ~/.anyenv/envs/rbenv/completions/rbenv.bash
+source ~/.anyenv/envs/plenv/completions/plenv.bash
 
 alias ls="ls -G"
 alias ll="ls -hl"
