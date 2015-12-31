@@ -58,6 +58,7 @@ alias bep='be pry -r ./config/environment'
 alias dl='docker ps -l -q'
 alias gosh="rlwrap -b '(){}[],#\";| ' gosh"
 alias hubo='hub browse'
+alias ocaml="rlwrap ocaml"
 git() {
   if [[ $1 = stauts ]]
   then
