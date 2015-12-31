@@ -27,8 +27,6 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE="cd: cd -:pwd"
 
 export GOPATH=$HOME
-export GOROOT=$HOME/.homebrew/Cellar/go/1.3/libexec
-export PATH=$PATH:$GOROOT/bin
 
 # Setting the title to the name of the running program
 # Only execute in GNU Screen
