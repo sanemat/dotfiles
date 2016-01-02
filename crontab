@@ -1,2 +1,4 @@
+# crontab -l # 確認
+# crontab ~/dotfiles/crontab # 上書き保存
 # http://d.hatena.ne.jp/anatoo/20120424/1335198888
 * * * * * /bin/echo 'display notification "姿勢正しく" with title "cron住職"' | /usr/bin/osascript
