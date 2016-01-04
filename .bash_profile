@@ -27,6 +27,7 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE="cd: cd -:pwd"
 
 export GOPATH=$HOME
+export GOROOT=`go env GOROOT`
 
 # Setting the title to the name of the running program
 # Only execute in GNU Screen
