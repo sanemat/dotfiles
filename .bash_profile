@@ -58,6 +58,7 @@ alias dl='docker ps -l -q'
 alias gosh="rlwrap -b '(){}[],#\";| ' gosh"
 alias hubo='hub browse'
 alias ocaml="rlwrap ocaml"
+alias ghl='cd $(ghq list -p | peco)'
 git() {
   if [[ $1 = stauts ]]
   then
